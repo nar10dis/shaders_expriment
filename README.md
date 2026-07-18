@@ -16,6 +16,8 @@ Petite collection de shaders Godot (`canvas_item`) expérimentaux.
 
 ## Color Shader
 
+![color](color_shader/color.gif)
+
 Fait pulser une teinte sur la texture au cours du temps.
 
 **Uniforms**
@@ -26,6 +28,8 @@ Fait pulser une teinte sur la texture au cours du temps.
 `sin(TIME)` oscille entre -1 et 1, multiplié par `mix_amount` ça donne `final_mix`. Tant que `final_mix > 0`, on mélange la texture avec `color` via `mix()` — l'oscillation du sinus fait donc apparaître/disparaître la teinte en boucle. Quand `final_mix` est négatif (moitié du cycle), on garde la texture d'origine.
 
 ## Fog Shader
+
+![fog](fog_shader/fog.gif)
 
 Simule un brouillard animé qui se déplace sur la texture.
 
@@ -41,6 +45,8 @@ Simule un brouillard animé qui se déplace sur la texture.
 3. Ce `noise_color` est ensuite mélangé à la texture d'origine selon `mix_amount` pour donner le rendu final.
 
 ## Water Shader
+
+![water](water_shader/water.gif)
 
 Fait "fondre"/onduler la texture localement autour d'une couleur ciblée.
 
